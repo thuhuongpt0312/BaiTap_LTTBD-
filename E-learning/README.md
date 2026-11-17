@@ -24,6 +24,7 @@
 E-learning/
 ├── SourceCode/
 │   └── MainActivity.kt   # Toàn bộ mã nguồn ứng dụng
+├── Slide/                # Slide thuyết trình
 └── README.md
 ```
 
