@@ -22,12 +22,18 @@
 
 ```
 E-learning/
-├── SourceCode/   # Mã nguồn dự án Android Studio
+├── SourceCode/
+│   └── MainActivity.kt   # Toàn bộ mã nguồn ứng dụng
 └── README.md
 ```
 
 ## Cách chạy
 
-1. Mở thư mục `SourceCode` bằng Android Studio.
-2. Chờ Gradle Sync hoàn tất.
-3. Chạy ứng dụng trên máy ảo hoặc điện thoại thật.
+1. Tạo project **Empty Activity (Compose)** trong Android Studio, package `com.example.fibonacci`.
+2. Chép `SourceCode/MainActivity.kt` thay cho file `MainActivity.kt` của project.
+3. Thêm vào `build.gradle.kts` (module app) rồi Sync:
+   ```kotlin
+   implementation("androidx.navigation:navigation-compose:2.8.5")
+   implementation("androidx.compose.material:material-icons-core:1.7.5")
+   ```
+4. Chạy ứng dụng trên máy ảo hoặc điện thoại thật.
